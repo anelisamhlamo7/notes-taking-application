@@ -1,17 +1,34 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Note Taking App</title>
+  <title>Notes Taking Application</title>
+
   <link rel="stylesheet" href="styles.css">
+
   <!-- Quill.js for the text editor -->
   <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 </head>
+
+
+
 <body class="light-mode">
+  
   <div class="container">
-    <h1>Note Taking App</h1>
+
+    <h1>Notes Taking Application</h1>
+
+    <!-- Search Bar for notes -->
+  <div>
+    <input type="text" id="search-input" placeholder="Search notes by title or content" />
+    <button onclick="searchNotes()">Search</button>
+  </div>
+
+
     <!-- Theme Toggle Button -->
     <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
 
@@ -24,14 +41,15 @@
     <!-- Save Button -->
     <button onclick="saveNote()">Save Note</button>
 
+    <!-- Saved Notes Button -->
+    <button onclick="toggleNotes()">Saved Notes</button>
+
     <!-- Sharing Buttons -->
     <button onclick="shareViaEmail()">Share via Email</button>
-    
 
     <button onclick="shareViaWhatsApp()">Share via WhatsApp</button>
 
-    <!-- Saved Notes Button -->
-    <button onclick="toggleNotes()">Saved Notes</button>
+    
 
     <!-- Saved Notes Section -->
     <div id="saved-notes" style="display:none;">
@@ -39,6 +57,16 @@
       <ul id="saved-notes-list"></ul>
     </div>
   </div>
+
+
+
+  <!-- Share via WhatsApp Form -->
+  <div id="whatsapp-form" style="display: none;">
+    <h3>Share Note via WhatsApp</h3>
+    <button onclick="shareViaWhatsApp()">Share</button>
+    <button onclick="hideWhatsAppForm()">Cancel</button>
+  </div>
+
 
   <!-- Include Quill.js -->
   <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
