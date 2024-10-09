@@ -2,7 +2,7 @@
   "name": "notes-taking-application",
   "version": "1.0.0",
   "description": "project about taking notes",
-  "main": "./backend/index.js",
+  "main": "./backend/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,7 @@
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "express": "^4.21.1",
-    "mongoose": "^8.7.0"
+    "mongoose": "^8.7.0",
+    "path": "^0.12.7"
   }
 }
