@@ -1,5 +1,24 @@
 {
+  "name": "notes-taking-application",
+  "version": "1.0.0",
+  "description": "project about taking notes",
+  "main": "./backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anelisamhlamo7/notes-taking-application.git"
+  },
+  "author": "anelisa mhlamo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anelisamhlamo7/notes-taking-application/issues"
+  },
+  "homepage": "https://github.com/anelisamhlamo7/notes-taking-application#readme",
   "dependencies": {
-    "emailjs-com": "^3.2.0"
+    "emailjs-com": "^3.2.0",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.0"
   }
 }
