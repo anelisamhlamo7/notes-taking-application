@@ -3,13 +3,11 @@
 #### Set up
 
 ### Prerequisites
-- Node.js and npm.
-- If you do not have node and npm installed, consult the following documentation:
+- Node.js : ensure your version is older than v16
+- npm 
+- express
+- mongoose
   
-```bash
-node : https://nodejs.org/en/download/package-manager
-npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-```
 
 #### Starting the Server
 
@@ -53,6 +51,11 @@ git clone git@github.com:anelisamhlamo7/notes-taking-application.git
 
 ```bash
 cd  notes-taking-application
+```
+
+To regenerate the node_modules using this command:
+```bash
+  npm install
 ```
 
 TO NOTE: 
