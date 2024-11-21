@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 5000;
-const noteRoutes = require('./backend/routes/notes');
+const noteRoutes = require('./backend/models/notes');
 const path = require('path');
 
 app.use(express.static('public'));
